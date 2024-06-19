@@ -1,11 +1,16 @@
-from typing import AsyncGenerator, Generator
+import os
+import sys
 
 import pytest
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from typing import AsyncGenerator, Generator
+
 from fastapi.testclient import TestClient
 from httpx import AsyncClient
 
-from ..main import app
-from ..routers.post import comment_table, post_table
+from main import app
+from routers.post import comment_table, post_table
 
 
 @pytest.fixture(scope="session")

@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 
-from ..models.post import Comment, CommentIn, UserPost, UserPostIn, UserPostWithComments
+from models.post import Comment, CommentIn, UserPost, UserPostIn, UserPostWithComments
 
 router = APIRouter()
 
