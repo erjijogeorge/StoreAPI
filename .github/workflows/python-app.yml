@@ -49,7 +49,7 @@ jobs:
         echo "  login ${{ secrets.HEROKU_API_KEY }}" >> ~/.netrc
         echo "  password ${{ secrets.HEROKU_API_KEY }}" >> ~/.netrc
         heroku git:remote -a app-tx-storeapi
-        git push heroku main
+        git push heroku master
 
     - name: Run FastAPI
       run: |
