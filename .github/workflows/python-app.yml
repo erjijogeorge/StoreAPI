@@ -35,7 +35,7 @@ jobs:
       with:
         projectBaseDir: .
         args: >
-          -Dsonar.organization=githubsonar
+          -Dsonar.organization=devsquad
           -Dsonar.projectKey=devsquad_githubsonar
 
     - name: Deploy to Heroku
