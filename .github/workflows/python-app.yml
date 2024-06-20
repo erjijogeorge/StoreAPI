@@ -3,7 +3,7 @@ name: Test and Deploy to Heroku
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   test_and_deploy:
