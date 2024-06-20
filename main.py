@@ -5,8 +5,6 @@ from fastapi.staticfiles import StaticFiles
 
 from routers import post
 
-app = FastAPI()
-
 # Initialize the FastAPI app with some metadata and disable the default docs
 app = FastAPI(
     title="Sonarcloud , GitHub Actions, FastAPI, Heroku",
