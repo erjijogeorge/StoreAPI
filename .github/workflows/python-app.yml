@@ -1,0 +1,51 @@
+name: Test and Deploy to Heroku
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.11
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install -r requirements_dev.txt
+
+    - name: Run tests
+      run: |
+        pytest tests/
+
+    - name: Set up SonarCloud
+      uses: sonarsource/sonarcloud-github-action@master
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      with:
+        projectBaseDir: .
+        args: >
+          -Dsonar.organization=your_organization_key
+          -Dsonar.projectKey=your_project_key
+
+    - name: Deploy to Heroku
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: |
+        heroku login
+        heroku git:remote -a your-heroku-app
+        git push heroku main
+
+    - name: Run FastAPI
+      run: |
+        uvicorn main:app --reload
