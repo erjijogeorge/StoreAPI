@@ -52,6 +52,3 @@ jobs:
         git fetch --unshallow
         git push heroku master
 
-    - name: Run FastAPI
-      run: |
-        uvicorn main:app --reload
