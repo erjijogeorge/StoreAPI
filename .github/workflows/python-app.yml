@@ -35,8 +35,8 @@ jobs:
       with:
         projectBaseDir: .
         args: >
-          -Dsonar.organization=devsquad
-          -Dsonar.projectKey=StoreAPI
+          -Dsonar.organization=githubsonar
+          -Dsonar.projectKey=devsquad_githubsonar
 
     - name: Deploy to Heroku
       env:
