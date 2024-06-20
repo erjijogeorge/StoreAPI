@@ -33,6 +33,7 @@ async def get_all_posts():
     return list(post_table.values())
 
 
+# Comment route
 @router.post("/comment", response_model=Comment)
 async def create_comment(comment: CommentIn):
     post = find_post(comment.post_id)
