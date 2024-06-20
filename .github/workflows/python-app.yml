@@ -43,7 +43,7 @@ jobs:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
       run: |
         heroku login
-        heroku git:remote -a your-heroku-app
+        heroku git:remote -a app-tx-storeapi
         git push heroku main
 
     - name: Run FastAPI
