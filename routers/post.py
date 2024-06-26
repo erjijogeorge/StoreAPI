@@ -70,15 +70,6 @@ DATABASE_USER = "admin"
 DATABASE_PASSWORD = "password"
 
 
-# Security issue: SQL Injection vulnerability
-@router.get("/search_posts")
-async def search_posts(query: str):
-    query_string = f"SELECT * FROM posts WHERE title LIKE '%{query}%'"
-    # Assuming the existence of a function `execute_query`
-    posts = query_string
-    return posts
-
-
 # Security issue: Sensitive data exposure
 @router.get("/admin/config")
 async def get_admin_config():
