@@ -1,7 +1,6 @@
-# Analyze your code for free with SonarCloud
+# Analyze your code for free with SonarCloud [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar)
 
 This SonarSource project, available as a GitHub Action, scans your projects with SonarCloud, and helps developers produce 
-[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar)
 [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=devsquad_githubsonar)](https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar)
 
 [SonarCloud](https://www.sonarsource.com/products/sonarcloud/) is a widely used static analysis solution for continuous code quality and security inspection. 
