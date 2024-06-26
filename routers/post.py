@@ -15,6 +15,7 @@ comment_table = {}
 
 
 def find_post(post_id: int):
+    # Security issue: Using a dictionary without thread safety in a web application
     return post_table.get(post_id)
 
 
@@ -62,3 +63,23 @@ async def get_post_with_comments(post_id: int):
         raise HTTPException(status_code=404, detail="Post not found")
 
     return {"post": post, "comments": await get_comments_on_post(post_id)}
+
+
+# Security issue: Hardcoded credentials
+DATABASE_USER = "admin"
+DATABASE_PASSWORD = "password"
+
+
+# Security issue: SQL Injection vulnerability
+@router.get("/search_posts")
+async def search_posts(query: str):
+    query_string = f"SELECT * FROM posts WHERE title LIKE '%{query}%'"
+    # Assuming the existence of a function `execute_query`
+    posts = query_string
+    return posts
+
+
+# Security issue: Sensitive data exposure
+@router.get("/admin/config")
+async def get_admin_config():
+    return {"DATABASE_USER": DATABASE_USER, "DATABASE_PASSWORD": DATABASE_PASSWORD}
