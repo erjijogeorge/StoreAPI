@@ -1,9 +1,14 @@
 # Analyze your code for free with SonarCloud 
 
 This SonarSource project, available as a GitHub Action, scans your projects with SonarCloud, and helps developers produce 
-[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar)
-[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=devsquad_githubsonar)](https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar)
-
+<p align="center">
+  <a href="https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar">
+    <img src="https://sonarcloud.io/images/project_badges/sonarcloud-white.svg" alt="SonarCloud" width="150">
+  </a>
+  <a href="https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar">
+    <img src="https://sonarcloud.io/api/project_badges/quality_gate?project=devsquad_githubsonar" alt="Quality Gate" width="150">
+  </a>
+</p>
 [SonarCloud](https://www.sonarsource.com/products/sonarcloud/) is a widely used static analysis solution for continuous code quality and security inspection. 
 It helps developers identify and fix issues in their code that could lead to bugs, vulnerabilities, or decreased development velocity.
 SonarCloud supports the most popular programming languages, including Java, JavaScript, TypeScript, C#, Python, C, C++, and [many more](https://www.sonarsource.com/knowledge/languages/).
@@ -38,7 +43,7 @@ StoreAPI is a robust and scalable RESTful API built with FastAPI. This project a
 
 ### Prerequisites
 
-- Python 3.8+
+- Python 3.11.3+
 - Docker (optional, for containerization)
 
 ### Installation
