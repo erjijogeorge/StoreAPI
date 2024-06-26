@@ -9,22 +9,14 @@
     <img src="https://sonarcloud.io/api/project_badges/measure?project=devsquad_githubsonar&metric=alert_status" alt="Quality Gate Status">
   </a>
 </p>
-
-# Analyze your code for free with SonarCloud 
-
-This SonarSource project, available as a GitHub Action, scans your projects with SonarCloud, and helps developers produce 
 <p align="center">
   <a href="https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar">
     <img src="https://sonarcloud.io/images/project_badges/sonarcloud-white.svg" alt="SonarCloud" width="150">
   </a>
-  <a href="https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar">
-    <img src="https://sonarcloud.io/api/project_badges/quality_gate?project=devsquad_githubsonar" alt="Quality Gate" width="150">
-  </a>
 </p>
 
-[SonarCloud](https://www.sonarsource.com/products/sonarcloud/) is a widely used static analysis solution for continuous code quality and security inspection. 
-It helps developers identify and fix issues in their code that could lead to bugs, vulnerabilities, or decreased development velocity.
-SonarCloud supports the most popular programming languages, including Java, JavaScript, TypeScript, C#, Python, C, C++, and [many more](https://www.sonarsource.com/knowledge/languages/).
+
+
 
 ## Introduction
 
