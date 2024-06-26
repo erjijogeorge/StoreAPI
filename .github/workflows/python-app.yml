@@ -1,4 +1,4 @@
-name: Test and Deploy to Heroku
+name: GitHub Actions Build
 
 on:
   push:
