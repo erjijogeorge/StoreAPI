@@ -1,4 +1,4 @@
-[![Test and Deploy to Heroku](https://github.com/erjijogeorge/StoreAPI/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/erjijogeorge/StoreAPI/actions/workflows/python-app.yml)
+[![GitHub Actions Build](https://github.com/erjijogeorge/StoreAPI/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/erjijogeorge/StoreAPI/actions/workflows/python-app.yml)
 # StoreAPI
 Mastering REST APIs with FastAPI
 Jose Salvatierra Fuentes
