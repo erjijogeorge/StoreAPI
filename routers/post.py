@@ -15,7 +15,6 @@ comment_table = {}
 
 
 def find_post(post_id: int):
-    # Security issue: Using a dictionary without thread safety in a web application
     return post_table.get(post_id)
 
 
@@ -31,8 +30,7 @@ async def create_post(post: UserPostIn):
 
 @router.get("/get_all_posts", response_model=list[UserPost])
 async def get_all_posts():
-    # Intentional code smell: redundant conversion to list
-    return list(list(post_table.values()))
+    return list(post_table.values())
 
 
 # Comment route
@@ -62,16 +60,5 @@ async def get_post_with_comments(post_id: int):
     post = find_post(post_id)
     if not post:
         raise HTTPException(status_code=404, detail="Post not found")
-    # Intentional bug: Not awaiting an async function
-    return {"post": post, "comments": get_comments_on_post(post_id)}
 
-
-# Security issue: Hardcoded credentials
-DATABASE_USER = "admin"
-DATABASE_PASSWORD = "password"
-
-
-# Security issue: Sensitive data exposure
-@router.get("/admin/config")
-async def get_admin_config():
-    return {"DATABASE_USER": DATABASE_USER, "DATABASE_PASSWORD": DATABASE_PASSWORD}
+    return {"post": post, "comments": await get_comments_on_post(post_id)}
