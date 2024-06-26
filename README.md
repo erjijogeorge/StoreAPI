@@ -1,4 +1,5 @@
-[![GitHub Actions Build](https://github.com/erjijogeorge/StoreAPI/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/erjijogeorge/StoreAPI/actions/workflows/python-app.yml)
+[![GitHub Actions Build](https://github.com/erjijogeorge/StoreAPI/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/erjijogeorge/StoreAPI/actions/workflows/python-app.yml) 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=devsquad_githubsonar&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar)
 # StoreAPI
 Mastering REST APIs with FastAPI
 Jose Salvatierra Fuentes
