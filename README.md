@@ -1,13 +1,11 @@
-<h1 align="center">StoreAPI</h1>
-
-<p align="center">
+<h1 align="center">StoreAPI
   <a href="https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar">
     <img src="https://sonarcloud.io/images/project_badges/sonarcloud-white.svg" alt="SonarCloud">
   </a>
-  <a href="https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar">
+    <a href="https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar">
     <img src="https://sonarcloud.io/api/project_badges/quality_gate?project=devsquad_githubsonar" alt="Quality Gate">
   </a>
-</p>
+</h1>
 
 <p align="center">
   <a href="https://github.com/erjijogeorge/StoreAPI/actions/workflows/python-app.yml">
