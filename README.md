@@ -9,12 +9,6 @@ SonarCloud supports the most popular programming languages, including Java, Java
 
 
 <h1 align="center">StoreAPI
-  <a href="https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar">
-    <img src="https://sonarcloud.io/images/project_badges/sonarcloud-white.svg" alt="SonarCloud">
-  </a>
-    <a href="https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar">
-    <img src="https://sonarcloud.io/api/project_badges/quality_gate?project=devsquad_githubsonar" alt="Quality Gate">
-  </a>
 </h1>
 
 <p align="center">
