@@ -49,7 +49,6 @@ jobs:
         echo "  login ${{ secrets.HEROKU_API_KEY }}" >> ~/.netrc
         echo "  password ${{ secrets.HEROKU_API_KEY }}" >> ~/.netrc
         chmod 600 ~/.netrc
-        git remote remove heroku || true
-        git remote add heroku https://git.heroku.com/app-tx-storeapi.git
+        heroku git:remote -a app-tx-storeapi
         git fetch --unshallow
         git push heroku master
