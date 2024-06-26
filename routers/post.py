@@ -31,7 +31,8 @@ async def create_post(post: UserPostIn):
 
 @router.get("/get_all_posts", response_model=list[UserPost])
 async def get_all_posts():
-    return list(post_table.values())
+    # Intentional code smell: redundant conversion to list
+    return list(list(post_table.values()))
 
 
 # Comment route
@@ -61,8 +62,8 @@ async def get_post_with_comments(post_id: int):
     post = find_post(post_id)
     if not post:
         raise HTTPException(status_code=404, detail="Post not found")
-
-    return {"post": post, "comments": await get_comments_on_post(post_id)}
+    # Intentional bug: Not awaiting an async function
+    return {"post": post, "comments": get_comments_on_post(post_id)}
 
 
 # Security issue: Hardcoded credentials
