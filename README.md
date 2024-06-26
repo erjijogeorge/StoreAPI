@@ -1,9 +1,22 @@
-# StoreAPI
+<h1 align="center">StoreAPI</h1>
 
-[![GitHub Actions Build](https://github.com/erjijogeorge/StoreAPI/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/erjijogeorge/StoreAPI/actions/workflows/python-app.yml) 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=devsquad_githubsonar&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar)
-[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar)
-[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=devsquad_githubsonar)](https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar)
+<p align="center">
+  <a href="https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar">
+    <img src="https://sonarcloud.io/images/project_badges/sonarcloud-white.svg" alt="SonarCloud">
+  </a>
+  <a href="https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar">
+    <img src="https://sonarcloud.io/api/project_badges/quality_gate?project=devsquad_githubsonar" alt="Quality Gate">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/erjijogeorge/StoreAPI/actions/workflows/python-app.yml">
+    <img src="https://github.com/erjijogeorge/StoreAPI/actions/workflows/python-app.yml/badge.svg?branch=master" alt="GitHub Actions Build">
+  </a>
+  <a href="https://sonarcloud.io/summary/new_code?id=devsquad_githubsonar">
+    <img src="https://sonarcloud.io/api/project_badges/measure?project=devsquad_githubsonar&metric=alert_status" alt="Quality Gate Status">
+  </a>
+</p>
 
 ## Introduction
 
@@ -22,10 +35,12 @@ StoreAPI is a robust and scalable RESTful API built with FastAPI. This project a
 
 ### Prerequisites
 
-- Python 3.12
+- Python 3.8+
 - Docker (optional, for containerization)
 
-**Clone the repository**
+### Installation
+
+1. **Clone the repository**
 
    ```sh
    git clone https://github.com/erjijogeorge/StoreAPI.git
