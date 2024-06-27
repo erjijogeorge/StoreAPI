@@ -28,7 +28,7 @@ def find_post(post_id: int):
 @router.post(
     "/create_post",
     response_model=UserPost,
-    status_code=status.HTTP_201_CREATED,
+    status_code=status.HTTP_200_OK,
     summary="Create a new user post",
     description="This endpoint allows the creation of a new user post. It accepts the post data and returns the created post with an assigned ID.",
     response_description="Output: A JSON object containing the created post details.",
@@ -60,7 +60,7 @@ async def get_all_posts():
 @router.post(
     "/comment",
     response_model=Comment,
-    status_code=status.HTTP_201_CREATED,
+    status_code=status.HTTP_200_OK,
     summary="Create a comment on a post",
     description="This endpoint allows the creation of a comment on a specified user post. It accepts the comment data and returns the created comment with an assigned ID.",
     response_description="Output: A JSON object containing the created comment details.",
