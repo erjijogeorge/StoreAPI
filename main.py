@@ -7,11 +7,11 @@ from routers import post
 
 # Initialize the FastAPI app with some metadata and disable the default docs
 app = FastAPI(
-    title="Sonarcloud , GitHub Actions, FastAPI, Heroku",
-    description="Sonarcloud , GitHub Actions, FastAPI, Heroku",
+    title="StoreAPI: A Comprehensive Solution for Store Management",
+    description="StoreAPI is a robust and scalable RESTful API built with FastAPI. This project aims to provide a solid foundation for managing store operations, including product listings, inventory management, and order processing. It integrates with SonarCloud for static code analysis, GitHub Actions for CI/CD, and Heroku for deployment.",
     version="2.0.0",
     docs_url=None,  # Disable default Swagger UI
-    redoc_url="/redoc",  # Disable default ReDoc
+    redoc_url="/redoc",  # Use ReDoc for API documentation
 )
 
 # Mount static files
